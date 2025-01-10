@@ -8,9 +8,13 @@ const Dashboard = async() => {
     return redirect("/")
   }
   return ( 
-    <div>
-      <header><UserButton showName/></header>
-      <h1>DASHBOARD</h1>
+    <div className='min-h-screen bg-gradient-to-b from-slate-600 to-black '>
+      <header className='p-8 '>
+        <div className='flex justify-end items-center'>
+      <UserButton showName/>
+        </div>
+      </header>
+      <h1 className='flex justify-center items-center'>DASHBOARD</h1>
     </div>
    );
 }
